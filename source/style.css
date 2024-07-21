@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Gameboy';
+    src: url(../assets/fonts/Gameboy.ttf);
+}
+
+
+body{
+
+    max-height: 100vh;
+    overflow: hidden;
+
+    --gbGreen1:#9bbc0f;
+    --gbGreen2:#8bac0f;
+    --gbGreen3:#306230;
+    --gbGreen4:#0f380f;
+    --gbGreen5:#0f380f;
+
+    font-family: 'Gameboy';
+    --barInterpolate: ease-in-out;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+
+    background-color: var(--gbGreen1);
+    
+}
+
+div.CenterAlign{
+    text-align: center;
+}
+
+div.Absolute{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+div.Fixed{
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: var(--gbGreen1);
+}
+
+div.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: var(--gbGreen2);
+}
+
+div.Content{
+    display: block;
+    position: absolute;
+
+    overflow-y: scroll;
+
+    left: 0vw;
+    right: 0vw;
+    top: 20vh;
+    bottom: 0vh;
+}
+
+a{
+    color: var(--gbGreen5);
+}
+
+a:visited{
+    color: var(--gbGreen4);
+}
+
+div.CheeseGallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.CheeseGalleryCheese{
+    width: 20vh;
+    height: 30vh;
+    display: block;
+    background-color: var(--gbGreen3);
+}
+
+img.CheeseGalleryCheese{
+    width: 100%;
+    height: auto;
+}
+
+#PopupName{
+    font-size: 5vh;
+}
+
+@media (max-width: 540px) {
+    div.Popup{
+        position: fixed;
+        left: 0vw;
+        right: 0vw;
+        top: 0vh;
+        bottom: 0vh;
+    
+        background-color: var(--gbGreen5);
+        opacity: 0.99;
+    
+        text-align: center;
+    
+    }
+
+    #PopupImage{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 540px){
+    div.Popup{
+        position: fixed;
+        left: 0vw;
+        right: 0vw;
+        top: 0vh;
+        bottom: 0vh;
+    
+        background-color: var(--gbGreen5);
+        opacity: 0.99;
+    
+    }
+
+    #PopupImage{
+        height: 50%;
+        width: auto;
+        float: left;
+    }
+
+}
