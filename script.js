@@ -54,7 +54,7 @@ function DivSelected(num){
 
 function CheesedToMeetYou(){ //Initialize cheese gallery from json
     //const cheeseData = JSON.parse(fetch("../assets/json/Cheeses.json"));
-    fetch("../assets/json/Cheeses.json")
+    fetch("assets/json/Cheeses.json")
                 .then((res) => {
                     if (!res.ok) {
                         throw new Error
