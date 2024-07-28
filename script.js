@@ -75,7 +75,7 @@ function InitializeCheeseGallery(data){
     for(let i = 0; i < data.length; i++){
         cheeseGallery.innerHTML +=
         "<div class=\"CheeseGalleryCheese\" onclick = \"ShowPopup(" + i.toString() + ")\">" +
-        "<img class=\"CheeseGalleryCheese\" src=\"" + cheeseData[i].ImagePath + "\">" +
+        "<img class=\"FullWidth\" src=\"" + cheeseData[i].ImagePath + "\">" +
         cheeseData[i].Name + 
         "</div>"
     }

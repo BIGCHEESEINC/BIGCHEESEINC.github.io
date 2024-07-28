@@ -85,7 +85,7 @@ div.CheeseGalleryCheese{
     background-color: var(--gbGreen3);
 }
 
-img.CheeseGalleryCheese{
+img.FullWidth{
     width: 100%;
     height: auto;
 }
@@ -94,7 +94,8 @@ img.CheeseGalleryCheese{
     font-size: 5vh;
 }
 
-@media (max-width: 540px) {
+/*Mobile*/
+@media (max-width: 800px) {
     div.Popup{
         position: fixed;
         left: 0vw;
@@ -113,9 +114,32 @@ img.CheeseGalleryCheese{
         width: 100%;
         height: auto;
     }
+
+    div.ImageAndDescriptionRight{
+        display: inline-block;
+        background-color: var(--gbGreen3);
+        width: 100%;
+    }
+    
+    div.ImageAndDescriptionLeft{
+        display: inline-block;
+        background-color: var(--gbGreen3);
+        width: 100%;
+    }
+
+    .FloatLeftMobile{
+        float: left;
+    }
+
+    img.ImageAndDescription{
+        float: left;
+        width: 50vw;
+    }
 }
 
-@media (min-width: 540px){
+
+/*Desktop*/
+@media (min-width: 800px){
     div.Popup{
         position: fixed;
         left: 0vw;
@@ -132,6 +156,23 @@ img.CheeseGalleryCheese{
         height: 50%;
         width: auto;
         float: left;
+    }
+
+    div.ImageAndDescriptionRight{
+        float: right;
+        background-color: var(--gbGreen3);
+        width: 20vh;
+    }
+    
+    div.ImageAndDescriptionLeft{
+        float: left;
+        background-color: var(--gbGreen3);
+        width: 20vh;
+    }
+
+    img.ImageAndDescription{
+        width: 100%;
+        height: auto;
     }
 
 }
