@@ -106,7 +106,7 @@ img.FullWidth{
         background-color: var(--gbGreen2);
         width: 50%;
 
-        visibility: hidden;
+        /*visibility: visible;*/
     }
 
     div.Popup{
@@ -150,7 +150,7 @@ img.FullWidth{
     }
 
     .MobileHide{
-        visibility: visible;
+        visibility: hidden;
     }
 
 }
@@ -170,7 +170,7 @@ img.FullWidth{
     
         background-color: var(--gbGreen2);
 
-        visibility: visible;
+        /*visibility: visible;*/
     }
 
     div.Popup{

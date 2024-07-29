@@ -100,5 +100,6 @@ function HidePopup(){
 }
 
 function NavbarToggle(){
-    navbar.classlist.toggle("MobileHide");
+    //alert("he");
+    navbar.classList.toggle("MobileHide");
 }
