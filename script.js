@@ -6,6 +6,9 @@ function Test(num){
 var BackgroundImage;
 
 //Variables
+var navbar;
+var navbarHidden = true;
+
 var Sections = Array();
 var cheesedToMeetYou = false;
 var cheeseData;
@@ -18,6 +21,8 @@ var popupText;
 
 //init
 window.addEventListener("DOMContentLoaded", (event) => {
+    navbar = document.getElementById("Navbar");
+
     for(let i = 0; i < 4; i++){
         Sections.push(
             document.getElementById("Section"+i.toString())
@@ -92,4 +97,8 @@ function ShowPopup(dataIndex){
 
 function HidePopup(){
     popup.style.visibility = 'hidden';
+}
+
+function NavbarToggle(){
+    navbar.classlist.toggle("MobileHide");
 }
